@@ -46,13 +46,6 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Fixed CTA Button - Right Side */}
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="hidden lg:inline-flex fixed right-8 top-1/2 -translate-y-1/2 h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors shadow-md"
-          >
-            Get Daily Pre-Market Report
-          </button>
         </div>
       </section>
 
