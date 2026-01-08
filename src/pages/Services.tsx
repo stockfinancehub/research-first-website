@@ -60,19 +60,25 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Active Services */}
+      {/* Research & Advisory Services - Coming Soon */}
       <section className="py-12 lg:py-20 bg-secondary/30">
         <div className="container mx-auto px-4 lg:px-8">
-          <h2 className="text-2xl font-semibold text-foreground mb-8">
+          <h2 className="text-2xl font-semibold text-foreground mb-2">
             Research & Advisory Services
           </h2>
+          <p className="text-sm text-muted-foreground italic mb-8">
+            These services are proposed offerings and will be launched subject to applicable regulatory approvals.
+          </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
             {activeServices.map((service, index) => (
               <div
                 key={index}
-                className="p-6 lg:p-8 rounded-lg border border-border bg-card"
+                className="p-6 lg:p-8 rounded-lg border border-border bg-muted/30 relative"
               >
-                <service.icon className="h-10 w-10 text-accent mb-4" />
+                <span className="absolute top-4 right-4 inline-flex items-center rounded-md bg-accent/10 px-2 py-1 text-xs font-medium text-accent">
+                  Coming Soon
+                </span>
+                <service.icon className="h-10 w-10 text-muted-foreground mb-4" />
                 <h3 className="text-xl font-medium text-foreground mb-3">
                   {service.title}
                 </h3>
