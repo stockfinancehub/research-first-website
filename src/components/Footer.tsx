@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import sfhLogo from "@/assets/sfh_logo.jpg";
+import sfhLogo from "@/assets/sfh_logo_new.png";
 
 const Footer = () => {
   return (
