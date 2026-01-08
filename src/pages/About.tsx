@@ -50,16 +50,16 @@ const About = () => {
               Our Founder
             </h2>
             <p className="text-muted-foreground mb-6">
-              Stock Finance Hub is founded by a SEBI-certified Research Analyst and 
-              NISM-qualified investment professional with deep expertise in fundamental 
+              Stock Finance Hub is founded by a SEBI-Registered Research Analyst and 
+              NISM-Qualified Professional with deep expertise in fundamental 
               equity analysis and portfolio construction.
             </p>
             <div className="flex flex-wrap gap-4 mb-6">
               <span className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
-                SEBI Certified Research Analyst
+                SEBI-Registered Research Analyst (Registration details available on request)
               </span>
               <span className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
-                NISM Qualified Professional
+                NISM-Qualified Professional
               </span>
             </div>
             <p className="text-muted-foreground">

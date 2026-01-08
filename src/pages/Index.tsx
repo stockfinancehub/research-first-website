@@ -40,18 +40,10 @@ const Index = () => {
               Independent Equity Research Built on Fundamentals & Data
             </h1>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              We provide disciplined, research-driven investment insights grounded in 
-              fundamental analysis and rational decision-making. No hype, no speculation — 
-              just rigorous research for informed investors.
+              We provide disciplined, research-driven equity insights grounded in 
+              fundamental analysis and rational decision-making. No hype, no speculation—only 
+              structured research for informed investors.
             </p>
-            <div className="flex items-center gap-4 flex-wrap">
-              <Link
-                to="/services"
-                className="inline-flex h-11 items-center justify-center rounded-md border border-primary px-6 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
-                Explore Our Services
-              </Link>
-            </div>
           </div>
 
           {/* Fixed CTA Button - Right Side */}
@@ -69,7 +61,7 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 text-center">
             <div>
-              <p className="text-sm font-medium text-primary">SEBI Certified</p>
+              <p className="text-sm font-medium text-primary">SEBI-Registered</p>
               <p className="text-xs text-muted-foreground mt-1">Research Analyst</p>
             </div>
             <div>
@@ -118,14 +110,6 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-10">
-            <Link
-              to="/services"
-              className="inline-flex h-10 items-center justify-center rounded-md border border-primary px-6 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-            >
-              View All Services
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -136,17 +120,12 @@ const Index = () => {
             <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
               Built on Integrity & Discipline
             </h2>
-            <p className="text-muted-foreground mb-8">
-              Stock Finance Hub is founded by a SEBI-certified, NISM-qualified professional 
-              committed to transparency, regulatory compliance, and investor suitability. 
-              Our vision is to build a trusted, research-driven investment brand in India.
+            <p className="text-muted-foreground">
+              Stock Finance Hub is founded by a SEBI-Registered Research Analyst (registration 
+              details available on request) and NISM-Qualified Professional, committed to 
+              transparency, regulatory compliance, and investor suitability. Our vision is to 
+              build a trusted, research-driven investment brand in India.
             </p>
-            <Link
-              to="/about"
-              className="inline-flex h-10 items-center justify-center rounded-md border border-primary px-6 text-sm font-medium text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
-            >
-              Learn More About Us
-            </Link>
           </div>
         </div>
       </section>
