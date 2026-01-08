@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import sfhLogo from "@/assets/sfh_logo.jpg";
+import sfhLogo from "@/assets/sfh_logo_new.png";
 import EmailModal from "./EmailModal";
 
 const Header = () => {
