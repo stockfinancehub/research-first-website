@@ -42,31 +42,51 @@ const About = () => {
         </div>
       </section>
 
-      {/* Founder Section */}
+      {/* Founder & Co-Founder Section */}
       <section className="py-16 lg:py-20 bg-secondary/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-6">
-              Our Founder
-            </h2>
-            <p className="text-muted-foreground mb-6">
-              Stock Finance Hub is founded by a SEBI-Registered Research Analyst and 
-              NISM-Qualified Professional with deep expertise in fundamental 
-              equity analysis and portfolio construction.
-            </p>
-            <div className="flex flex-wrap gap-4 mb-6">
-              <span className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
-                SEBI-Registered Research Analyst (Registration details available on request)
-              </span>
-              <span className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
-                NISM-Qualified Professional
-              </span>
+            {/* Founder */}
+            <div className="mb-12">
+              <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-2">
+                Founder
+              </h2>
+              <p className="text-lg font-medium text-foreground mb-4">
+                Hemanth M M
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Stock Finance Hub is founded by Hemanth M M, a NISM-Qualified investment 
+                professional with a strong focus on fundamental equity research, data-driven 
+                analysis, and disciplined long-term investing.
+              </p>
+              <p className="text-muted-foreground">
+                The founder follows a research-first and compliance-oriented approach, 
+                emphasizing transparency, investor suitability, and rational decision-making.
+              </p>
             </div>
-            <p className="text-muted-foreground">
-              With a commitment to compliance-first practices and investor suitability, 
-              our founder brings institutional-grade research discipline to individual 
-              and institutional investors alike.
-            </p>
+
+            {/* Co-Founder */}
+            <div className="mb-10">
+              <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-2">
+                Co-Founder
+              </h2>
+              <p className="text-lg font-medium text-foreground mb-4">
+                Naveen M E
+              </p>
+              <p className="text-muted-foreground">
+                Naveen M E, Co-Founder of Stock Finance Hub, contributes to the firm's 
+                research development, operational structure, and long-term strategic direction, 
+                supporting a disciplined and transparent investment research framework.
+              </p>
+            </div>
+
+            {/* Launching Soon Note */}
+            <div className="pt-6 border-t border-border">
+              <p className="text-sm text-muted-foreground italic">
+                Regulatory registrations and expanded investment services are planned and 
+                will be launched in accordance with applicable regulations.
+              </p>
+            </div>
           </div>
         </div>
       </section>
