@@ -91,8 +91,11 @@ const Services = () => {
           <h2 className="text-2xl font-semibold text-foreground mb-2">
             Distribution Services
           </h2>
-          <p className="text-muted-foreground mb-8">
+          <p className="text-muted-foreground mb-4">
             Expanding our offerings to provide comprehensive investment distribution services.
+          </p>
+          <p className="text-sm text-muted-foreground italic mb-8">
+            These services are proposed offerings and will be launched subject to applicable regulatory approvals.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {comingSoonServices.map((service, index) => (

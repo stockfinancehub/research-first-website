@@ -46,8 +46,9 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border">
           <p className="text-xs text-muted-foreground leading-relaxed">
             <strong>Disclaimer:</strong> Investment in securities market are subject to market risks. 
-            Read all the related documents carefully before investing. The securities quoted are 
-            exemplary and are not recommendatory. Past performance is not indicative of future results. 
+            Read all the related documents carefully before investing. Any securities mentioned are 
+            for educational and illustrative purposes only and do not constitute investment advice 
+            or recommendations. Past performance is not indicative of future results. 
             Please consult your financial advisor before making any investment decisions. 
             Stock Finance Hub does not guarantee any returns on investments.
           </p>
