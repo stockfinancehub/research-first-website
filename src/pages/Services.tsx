@@ -1,16 +1,58 @@
 import Layout from "@/components/Layout";
+import { BarChart3, FileSearch, Briefcase, Users, TrendingUp, Building, PiggyBank } from "lucide-react";
 
 const Services = () => {
+  const activeServices = [
+    {
+      icon: BarChart3,
+      title: "Equity Research & Fundamental Analysis",
+      description: "Comprehensive research on listed companies using fundamental analysis, financial modeling, ratio analysis, and valuation methodologies. Our research covers business quality, competitive positioning, management assessment, and intrinsic value estimation.",
+    },
+    {
+      icon: FileSearch,
+      title: "Custom Research & Company Analysis",
+      description: "Bespoke research reports tailored to your specific requirements. Whether you need deep-dive analysis on a particular company, sector study, or thematic research, we deliver detailed insights aligned with your investment thesis.",
+    },
+    {
+      icon: Briefcase,
+      title: "Model Portfolios",
+      description: "Curated investment portfolios constructed through rigorous research and risk assessment. Our model portfolios are designed for long-term value creation, with clear investment rationale and regular monitoring.",
+    },
+    {
+      icon: Users,
+      title: "Research & Investment Consulting",
+      description: "Strategic consulting services for institutions and HNIs seeking research-driven investment guidance. We provide independent research support, portfolio review, and investment process consulting.",
+    },
+  ];
+
+  const comingSoonServices = [
+    {
+      icon: TrendingUp,
+      title: "PMS Distribution",
+      description: "Distribution of Portfolio Management Services from leading PMS providers. We will help you select suitable PMS strategies aligned with your investment objectives and risk profile.",
+    },
+    {
+      icon: Building,
+      title: "AIF Distribution",
+      description: "Distribution of Alternative Investment Funds across various categories. Access to curated AIF offerings with thorough due diligence and suitability assessment.",
+    },
+    {
+      icon: PiggyBank,
+      title: "Mutual Fund Distribution",
+      description: "Comprehensive mutual fund distribution services with unbiased fund selection based on fundamental research, cost efficiency, and alignment with your financial goals.",
+    },
+  ];
+
   return (
     <Layout>
       {/* Hero */}
-      <section className="py-24 lg:py-32">
+      <section className="py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-2xl">
-            <h1 className="text-3xl md:text-4xl font-normal text-foreground mb-8">
-              Services
+          <div className="max-w-3xl">
+            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6">
+              Our Services
             </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground">
               Comprehensive research and investment services designed for disciplined, 
               long-term investors seeking fundamental insights and rational investment guidance.
             </p>
@@ -18,138 +60,93 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Research & Advisory Services */}
-      <section className="py-20">
+      {/* Research & Advisory Services - Coming Soon */}
+      <section className="py-12 lg:py-20 bg-secondary/30">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-2xl">
-            <h2 className="text-xl font-normal text-foreground mb-3">
-              Research & Advisory Services
-            </h2>
-            <p className="text-sm text-muted-foreground italic mb-10">
-              These services are proposed offerings and will be launched subject to applicable regulatory approvals.
-            </p>
-            
-            <div className="space-y-10">
-              <div>
-                <h3 className="text-base font-normal text-foreground mb-2">
-                  Equity Research & Fundamental Analysis
+          <h2 className="text-2xl font-semibold text-foreground mb-2">
+            Research & Advisory Services
+          </h2>
+          <p className="text-sm text-muted-foreground italic mb-8">
+            These services are proposed offerings and will be launched subject to applicable regulatory approvals.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            {activeServices.map((service, index) => (
+              <div
+                key={index}
+                className="p-6 lg:p-8 rounded-lg border border-border bg-muted/30 relative"
+              >
+                <span className="absolute top-4 right-4 inline-flex items-center rounded-md bg-accent/10 px-2 py-1 text-xs font-medium text-accent">
+                  Coming Soon
+                </span>
+                <service.icon className="h-10 w-10 text-muted-foreground mb-4" />
+                <h3 className="text-xl font-medium text-foreground mb-3">
+                  {service.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Comprehensive research on listed companies using fundamental analysis, financial modeling, 
-                  ratio analysis, and valuation methodologies. Our research covers business quality, 
-                  competitive positioning, management assessment, and intrinsic value estimation.
+                <p className="text-muted-foreground leading-relaxed">
+                  {service.description}
                 </p>
               </div>
-
-              <div>
-                <h3 className="text-base font-normal text-foreground mb-2">
-                  Custom Research & Company Analysis
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Bespoke research reports tailored to your specific requirements. Whether you need 
-                  deep-dive analysis on a particular company, sector study, or thematic research, 
-                  we deliver detailed insights aligned with your investment thesis.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-base font-normal text-foreground mb-2">
-                  Model Portfolios
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Curated investment portfolios constructed through rigorous research and risk assessment. 
-                  Our model portfolios are designed for long-term value creation, with clear investment 
-                  rationale and regular monitoring.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-base font-normal text-foreground mb-2">
-                  Research & Investment Consulting
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Strategic consulting services for institutions and HNIs seeking research-driven 
-                  investment guidance. We provide independent research support, portfolio review, 
-                  and investment process consulting.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Distribution Services */}
-      <section className="py-20">
+      {/* Coming Soon Services */}
+      <section className="py-12 lg:py-20">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-2xl">
-            <h2 className="text-xl font-normal text-foreground mb-3">
-              Distribution Services
-            </h2>
-            <p className="text-sm text-muted-foreground mb-2">
-              Expanding our offerings to provide comprehensive investment distribution services.
-            </p>
-            <p className="text-sm text-muted-foreground italic mb-10">
-              These services are proposed offerings and will be launched subject to applicable regulatory approvals.
-            </p>
-            
-            <div className="space-y-10">
-              <div>
-                <h3 className="text-base font-normal text-foreground mb-2">
-                  PMS Distribution
+          <h2 className="text-2xl font-semibold text-foreground mb-2">
+            Distribution Services
+          </h2>
+          <p className="text-muted-foreground mb-4">
+            Expanding our offerings to provide comprehensive investment distribution services.
+          </p>
+          <p className="text-sm text-muted-foreground italic mb-8">
+            These services are proposed offerings and will be launched subject to applicable regulatory approvals.
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {comingSoonServices.map((service, index) => (
+              <div
+                key={index}
+                className="p-6 rounded-lg border border-border bg-muted/30 relative"
+              >
+                <span className="absolute top-4 right-4 inline-flex items-center rounded-md bg-accent/10 px-2 py-1 text-xs font-medium text-accent">
+                  Coming Soon
+                </span>
+                <service.icon className="h-8 w-8 text-muted-foreground mb-4" />
+                <h3 className="text-lg font-medium text-foreground mb-2">
+                  {service.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Distribution of Portfolio Management Services from leading PMS providers. 
-                  We will help you select suitable PMS strategies aligned with your investment 
-                  objectives and risk profile.
+                <p className="text-sm text-muted-foreground">
+                  {service.description}
                 </p>
               </div>
-
-              <div>
-                <h3 className="text-base font-normal text-foreground mb-2">
-                  AIF Distribution
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Distribution of Alternative Investment Funds across various categories. 
-                  Access to curated AIF offerings with thorough due diligence and suitability assessment.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-base font-normal text-foreground mb-2">
-                  Mutual Fund Distribution
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Comprehensive mutual fund distribution services with unbiased fund selection 
-                  based on fundamental research, cost efficiency, and alignment with your financial goals.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Approach */}
-      <section className="py-20">
+      <section className="py-12 lg:py-20 bg-secondary/30">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-2xl">
-            <h2 className="text-xl font-normal text-foreground mb-8">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-semibold text-foreground mb-6">
               Our Approach
             </h2>
-            <div className="space-y-6 text-muted-foreground">
+            <div className="space-y-4 text-muted-foreground">
               <p>
-                <span className="text-foreground">Research-First:</span> Every 
+                <strong className="text-foreground">Research-First:</strong> Every 
                 recommendation is backed by thorough fundamental research and analysis.
               </p>
               <p>
-                <span className="text-foreground">Risk-Aware:</span> We clearly 
+                <strong className="text-foreground">Risk-Aware:</strong> We clearly 
                 communicate risks and ensure recommendations align with investor suitability.
               </p>
               <p>
-                <span className="text-foreground">Long-Term Focus:</span> Our 
+                <strong className="text-foreground">Long-Term Focus:</strong> Our 
                 investment philosophy prioritizes sustainable value creation over short-term gains.
               </p>
               <p>
-                <span className="text-foreground">Compliance-First:</span> All our 
+                <strong className="text-foreground">Compliance-First:</strong> All our 
                 services adhere strictly to SEBI regulations and industry best practices.
               </p>
             </div>
