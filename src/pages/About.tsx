@@ -51,17 +51,41 @@ const About = () => {
               <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-2">
                 Founder
               </h2>
-              <p className="text-lg font-medium text-foreground mb-4">
+              <p className="text-lg font-medium text-foreground mb-1">
                 Hemanth M M
               </p>
+              <p className="text-sm text-muted-foreground mb-4">
+                Founder & Research Head, Stock Finance Hub
+              </p>
               <p className="text-muted-foreground mb-4">
-                Stock Finance Hub is founded by Hemanth M M, a NISM-Qualified investment 
-                professional with a strong focus on fundamental equity research, data-driven 
-                analysis, and disciplined long-term investing.
+                Hemanth M M is the Founder & Research Head at Stock Finance Hub, a research-first 
+                financial platform focused on transparent equity research, fundamental analysis, 
+                and disciplined long-term wealth creation. His journey into finance developed 
+                through curiosity and self-learning rather than a predefined path.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                While initially pursuing a BCA degree, he realized the field did not align with 
+                his long-term goals and gradually developed a strong interest in the stock market. 
+                During his early learning phase, he observed that many coaching programs emphasized 
+                short-term trading strategies like F&O, scalping, and hedging, often overlooking 
+                the importance of structured research and long-term investing. This realization 
+                encouraged him to pursue a different direction—one centered on understanding 
+                business fundamentals, sector analysis, and rational investment principles.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Over time, he dedicated himself to studying company financials, market behavior, 
+                and long-term value creation, building strong skills in equity research, fundamental 
+                analysis, company valuation basics, portfolio structuring, and sector study. He is 
+                currently pursuing a B.Com degree to meet the academic requirements for SEBI Research 
+                Analyst registration and is actively preparing for future regulatory qualifications.
               </p>
               <p className="text-muted-foreground">
-                The founder follows a research-first and compliance-oriented approach, 
-                emphasizing transparency, investor suitability, and rational decision-making.
+                With a vision to promote ethical, unbiased, and compliance-oriented financial research, 
+                he founded Stock Finance Hub to help investors make informed decisions based on data 
+                rather than speculation. He strongly believes in long-term wealth creation, a client-first 
+                approach, zero hype, and complete transparency in finance, with the long-term goal of 
+                building one of India's most trusted research-driven investment platforms and serving 
+                investors with high-quality insights.
               </p>
             </div>
 
