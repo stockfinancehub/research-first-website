@@ -1,11 +1,7 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
 import { BarChart3, FileSearch, Briefcase, Users } from "lucide-react";
 import Layout from "@/components/Layout";
-import EmailModal from "@/components/EmailModal";
 
 const Index = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const services = [
     {
@@ -122,8 +118,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </Layout>
   );
 };
