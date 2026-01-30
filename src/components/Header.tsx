@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import sfhLogo from "@/assets/sfh_logo_new.png";
-import EmailModal from "./EmailModal";
+
+const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScD2TAKqz8f_4JGBfNiaslOoHBcTmGJa_5vl2DGLzGFEOZwbw/viewform?usp=publish-editor";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation();
 
   const navLinks = [
@@ -42,12 +42,14 @@ const Header = () => {
           </nav>
 
           {/* CTA Button - Desktop */}
-          <button
-            onClick={() => setIsModalOpen(true)}
+          <a
+            href={GOOGLE_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
           >
             Get Daily Pre-Market Report
-          </button>
+          </a>
 
           {/* Mobile Menu Button */}
           <button
@@ -75,21 +77,19 @@ const Header = () => {
                   {link.name}
                 </Link>
               ))}
-              <button
-                onClick={() => {
-                  setIsMenuOpen(false);
-                  setIsModalOpen(true);
-                }}
-                className="mt-2 h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+              <a
+                href={GOOGLE_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="mt-2 h-10 flex items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
               >
                 Get Daily Pre-Market Report
-              </button>
+              </a>
             </nav>
           </div>
         )}
       </header>
-
-      <EmailModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );
 };
